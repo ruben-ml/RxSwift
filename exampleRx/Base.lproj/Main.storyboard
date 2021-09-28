@@ -1,24 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="exampleRx" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00/00/0000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xn4-Yt-JTq">
+                                <rect key="frame" x="140.5" y="439.5" width="133" height="27.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La fecha y hora actual es:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOn-J2-yVy">
+                                <rect key="frame" x="74" y="397.5" width="266" height="27.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La fecha y hora actual es:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnn-MU-kbh">
+                                <rect key="frame" x="74" y="117" width="266" height="27.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00/00/0000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ng-hL-lh1">
+                                <rect key="frame" x="140.5" y="161" width="133" height="27.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MF1-Zg-I4S">
+                                <rect key="frame" x="32" y="717" width="350" height="33"/>
+                                <color key="backgroundColor" red="0.68896122699999995" green="0.89605117960000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="19"/>
+                                <state key="normal" title="Click the Button to see current date and time">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00/00/0000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsF-Ir-p7D">
+                                <rect key="frame" x="140.5" y="758" width="133" height="27.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GsF-Ir-p7D" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2YR-QL-61H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MF1-Zg-I4S" secondAttribute="trailing" constant="10" id="4Gm-7s-p5Z"/>
+                            <constraint firstItem="wnn-MU-kbh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6Nw-Mk-JGz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GsF-Ir-p7D" secondAttribute="trailing" constant="20" id="BVV-Gb-FMf"/>
+                            <constraint firstItem="GsF-Ir-p7D" firstAttribute="top" secondItem="MF1-Zg-I4S" secondAttribute="bottom" constant="8" symbolic="YES" id="OOB-TD-uF2"/>
+                            <constraint firstItem="Xn4-Yt-JTq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Qxb-Jr-oA5"/>
+                            <constraint firstItem="MF1-Zg-I4S" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="SpF-H8-SkC"/>
+                            <constraint firstItem="Xn4-Yt-JTq" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="VkV-yf-dhd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GsF-Ir-p7D" secondAttribute="bottom" constant="76.5" id="XLX-KS-rzd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7Ng-hL-lh1" secondAttribute="trailing" constant="20" id="Y4e-Il-LRg"/>
+                            <constraint firstItem="vOn-J2-yVy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Yyy-rr-uHi"/>
+                            <constraint firstItem="wnn-MU-kbh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bNM-FG-6mC"/>
+                            <constraint firstItem="Xn4-Yt-JTq" firstAttribute="top" secondItem="vOn-J2-yVy" secondAttribute="bottom" constant="14.5" id="cj3-Rf-lJc"/>
+                            <constraint firstItem="Xn4-Yt-JTq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="cpd-b8-zUd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wnn-MU-kbh" secondAttribute="trailing" constant="20" id="h6u-qw-z12"/>
+                            <constraint firstItem="wnn-MU-kbh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="73" id="is8-W6-9CH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Xn4-Yt-JTq" secondAttribute="trailing" constant="10" id="jWz-fL-32t"/>
+                            <constraint firstItem="7Ng-hL-lh1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nYD-t6-BcU"/>
+                            <constraint firstItem="7Ng-hL-lh1" firstAttribute="top" secondItem="wnn-MU-kbh" secondAttribute="bottom" constant="16.5" id="r0Y-fl-woS"/>
+                            <constraint firstItem="MF1-Zg-I4S" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="r6O-fo-VMF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vOn-J2-yVy" secondAttribute="trailing" constant="20" id="sHk-1W-G5E"/>
+                            <constraint firstItem="vOn-J2-yVy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vcS-7w-GMh"/>
+                            <constraint firstItem="GsF-Ir-p7D" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wPC-44-kbE"/>
+                            <constraint firstItem="7Ng-hL-lh1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xwW-vJ-sS6"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonLbl" destination="GsF-Ir-p7D" id="z0p-kv-xjh"/>
+                        <outlet property="dateButton" destination="MF1-Zg-I4S" id="iQQ-T8-nzD"/>
+                        <outlet property="dateLbl" destination="Xn4-Yt-JTq" id="FZd-wm-g7N"/>
+                        <outlet property="dateThread" destination="7Ng-hL-lh1" id="pZl-6Q-DUF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="105.79710144927537" y="67.633928571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
