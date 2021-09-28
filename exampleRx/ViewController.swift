@@ -11,9 +11,7 @@ import RxCocoa
 
 class ViewController: UIViewController {
 
-    let disposeBag = DisposeBag()
-    let operationQueue = OperationQueue()
-    
+    let disposeBag = DisposeBag()    
     
     @IBOutlet weak var buttonLbl: UILabel!
     @IBOutlet weak var dateLbl: UILabel!
@@ -40,7 +38,7 @@ class ViewController: UIViewController {
     
     private func threadBackground() {
         
-        let operationQueueScheduler = OperationQueueScheduler(operationQueue: self.operationQueue)
+        let operationQueueScheduler = MainScheduler()
         
         Observable.just(getDate())
             //ejecuta la operacion en el hilo nuevo
